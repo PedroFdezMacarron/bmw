@@ -1,0 +1,278 @@
+/*IMPORTANTE TRAER PRIMERO VARIABLES*/ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*DESPUES DE LAS VARIABLES TRAEMOS LOS BLOQUES*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bmw {
+  width: 90%;
+  margin: 0px auto;
+  color: white;
+}
+
+.portada {
+  max-width: 90%;
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bmw-m4-edicion-bmw-m-50-aniversario-1-1658240369.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-color: transparent;
+}
+.portada__cuerpo {
+  margin-left: 57px;
+  display: flex;
+  flex-direction: column;
+}
+.portada__titulo {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: bmwTypeNextWeb, Arial, Helvetica, sans-serif;
+  margin-top: 565px;
+}
+.portada__subtitulo {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: bmwTypeNextWeb, Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+.portada__item {
+  color: white;
+  width: 100px;
+}
+.portada__item:hover {
+  color: #0066B2;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.portada__logo {
+  margin-top: 10px;
+  height: 100px;
+  background-color: whitesmoke;
+}
+.portada__menu {
+  min-height: 75px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.portada__lista {
+  font-family: bmwTypeNextWeb, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+}
+.portada__iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+.portada__boton {
+  margin-top: 13px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.linea {
+  border-top: 1px solid rgba(212, 255, 0, 0.694);
+  height: 2px;
+  max-width: 80%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.frame_fichas {
+  display: flex;
+  align-items: center;
+}
+
+.fichas {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fichas__ficha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+.fichas__ficha--img {
+  max-width: 250px;
+}
+.fichas__ficha--titulo {
+  font-size: 38px;
+  color: black;
+  font-weight: 700;
+}
+.fichas__ficha--subtitulo {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+  text-align: justify;
+  max-width: 250px;
+}
+.fichas__ficha--config {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+
+.boton {
+  border-radius: 2px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton--azul {
+  background-color: #1C69D4;
+  width: 260px;
+}
+
+.series {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+}
+.series__titulo {
+  margin-top: 120px;
+  color: grey;
+  margin-bottom: 50px;
+  text-align: left;
+  width: 80%;
+}
+.series__menu {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+.series__item {
+  color: grey;
+}
+.series__li {
+  min-width: 150px;
+  text-align: center;
+}
+.series__item:hover {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.series__carrusel {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: flex-start;
+}
+.series__ficha {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.series__ficha--img {
+  height: 130px;
+}
+.series__ficha--modelo {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+.series__ficha--precio {
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+}
+.series__ficha--config {
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

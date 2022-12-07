@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bmw{
+ width: 90%;
+ margin: 0px auto;
+ color: white;
+}
+
+.portada{
+    // background-image:url("../../imagenes/fondo1.jpg"); 
+    // background-image:url("./imagenes/fondo1.jpg")
+    max-width: 90%;
+    background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bmw-m4-edicion-bmw-m-50-aniversario-1-1658240369.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100vh;
+    min-height:100vh;
+    background-color: transparent;
+
+    &__cuerpo{
+        margin-left: 57px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__titulo{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: bmwTypeNextWeb,Arial,Helvetica,sans-serif;
+        margin-top: 565px;
+    }
+    &__subtitulo{
+        font-size: 20px;
+        font-weight: 700;
+        font-family: bmwTypeNextWeb,Arial,Helvetica,sans-serif;
+        margin-top: 20px;
+    }
+
+
+    &__item{
+        color: white;
+        width: 100px;
+    }
+    &__item:hover{
+        color: #0066B2;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    &__logo{
+        margin-top: 10px;
+        height: 100px;
+        background-color: whitesmoke;
+    }
+
+    &__menu{
+        min-height: 75px;
+        color:white;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        padding-left: 150px; 
+        padding-right: 150px; 
+    }
+    &__lista{
+        font-family: bmwTypeNextWeb,Arial,Helvetica,sans-serif;
+        font-weight: 500;        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    &__iconos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    &__boton{
+        margin-top: 13px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+          
+    
+}
+
+.linea {
+    border-top: 1px solid rgba(212, 255, 0, 0.694);
+    height: 2px;
+    max-width: 80%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+.frame_fichas{
+    display: flex;
+    align-items: center;
+}
+.fichas{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content:space-evenly;
+    align-items: flex-start;
+    gap:5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &__ficha{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        max-width: 250px;
+        border: 1px solid lightgrey;
+        padding: 10px;
+        &--img{
+            max-width: 250px;
+        }
+        &--titulo{
+            font-size: 38px;
+            color: black;
+            font-weight: 700;
+        }
+        &--subtitulo{
+            font-size: 12px;
+            color: black;
+            font-weight: 600;
+            text-align: justify;
+            max-width: 250px;
+        }
+        &--config{
+            font-size: 15px;
+            color: black;
+            font-weight: 600;
+        }
+
+    }
+        
+ 
+}

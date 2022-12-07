@@ -1,0 +1,82 @@
+.series{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700; 
+    align-items: center; 
+
+    &__titulo{
+        margin-top: 120px;
+        color: grey;
+        margin-bottom: 50px;
+        text-align: left;     
+        width: 80%;
+    }
+    
+    &__menu{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+    &__item{
+        color: grey;
+        
+    }
+    &__li{
+        min-width: 150px;
+        text-align: center;
+    }
+
+    &__item:hover {
+        color:black;
+        font-size: 1.7rem;
+        font-weight: 900;
+    }
+
+    &__carrusel{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    &__ficha{
+        margin-top: 40px;
+             
+        display: flex;
+        flex-direction: column;   
+        gap:10px;
+        &--img{
+          
+          height: 130px;
+          
+          
+        }    
+        &--modelo{
+            font-size: 18px;
+            color: black;
+            font-weight: 600;
+        }
+        &--precio{
+            font-size: 14px;
+            color: grey;
+            font-weight: 600;
+        }
+        &--config{
+            font-size: 15px;
+            color: black;
+            font-weight: 600;
+        }
+
+    }
+
+
+
+
+}

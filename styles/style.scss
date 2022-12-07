@@ -1,0 +1,14 @@
+/*IMPORTANTE TRAER PRIMERO VARIABLES*/
+@import "./utilities/reset";
+@import "./utilities/colors";
+@import "./utilities/mixin";
+@import "./utilities/responsive";
+
+
+
+/*DESPUES DE LAS VARIABLES TRAEMOS LOS BLOQUES*/
+@import "./blocks/ficha";
+
+@import "./blocks/botones";
+
+@import "./blocks/tarjetas";
