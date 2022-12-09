@@ -9,18 +9,23 @@
 .bmw{
  width: 90%;
  margin: 0px auto;
- color: white;
+ color: rgb(255, 255, 255);
+ background-color: rgb(250, 250, 250);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-family: bmwTypeNextWeb,Arial,Helvetica,sans-serif;
 }
 
 .portada{
     // background-image:url("../../imagenes/fondo1.jpg"); 
     // background-image:url("./imagenes/fondo1.jpg")
-    max-width: 90%;
+    max-width: 100%;
     background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bmw-m4-edicion-bmw-m-50-aniversario-1-1658240369.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 100vh;
+    min-width: 90%;
     min-height:100vh;
     background-color: transparent;
 
@@ -95,8 +100,8 @@
 }
 
 .linea {
-    border-top: 1px solid rgba(212, 255, 0, 0.694);
-    height: 2px;
+    border-top: 2px solid  #0066B2;
+    height:2px;
     max-width: 80%;
     padding: 0;
     margin: 20px auto 0 auto;
@@ -104,11 +109,12 @@
 .frame_fichas{
     display: flex;
     align-items: center;
+    width: 90%;
 }
 .fichas{
     margin-top: 150px;
     margin-bottom: 150px;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;    
     justify-content:space-evenly;
@@ -120,7 +126,7 @@
         display: flex;
         flex-direction: column;
         gap:20px;
-        max-width: 250px;
+        max-width: 240px;
         border: 1px solid lightgrey;
         padding: 10px;
         &--img{
@@ -147,4 +153,163 @@
     }
         
  
+}
+
+.categorias{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-bottom: 50px;
+        gap:20px;
+
+        &__item{
+            width: 500px;    
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border: 1px solid lightgrey;
+            padding: 15px;
+
+        }
+
+        &__tit{
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+            padding-top: 20px;
+        }
+        &__sub{            
+            padding-top: 20px;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &__img{
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+            width: 500px;
+            height: auto;
+        }
+        &__img-cont{        
+            width: 100%;           
+            object-fit: scale-down;
+            height: 283px;
+          
+        }
+  
+        
+
+
+
+}
+
+.links{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap:20px;
+
+    &__ficha{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 100px;
+        &--icono{
+
+        }
+        &--txt{
+            padding-top: 15px;
+            color: grey;
+            font-weight: 600;
+
+        }
+    }
+}
+
+.pie{
+    width: 90%;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__linea{
+        border-top: 2px solid #aaa;
+        height: 2px;
+        width: 68%;
+        padding: 0;
+        margin: 76px auto 0 auto;
+    }
+
+
+
+    &__grupo{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        width: 70%;
+        gap: 30px;
+        justify-content: space-between;
+
+        &__ficha{
+            font-size: 20px;
+            font-weight: 700;
+            color: grey;
+          
+            &--tit{                
+                padding-bottom: 20px;
+                color: black;
+            }
+            &--lista{
+
+
+            }
+            &--li{
+                font-size: 15px;
+                padding-bottom: 7px;
+                font-weight: 600;
+            }
+
+        }
+    }
+}
+
+.copy{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    &__tit{
+        font-size: 12px;
+        color: #676666;
+        font-weight: 600;
+    }
+    &__nav{  
+        justify-content:space-around;
+        width: 70%;
+    }
+    &__list{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 12px;
+    }
 }
